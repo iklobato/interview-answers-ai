@@ -2,6 +2,9 @@
 
 A Chrome extension that provides real-time AI-powered assistance during Google Meet sessions by analyzing captions and generating relevant responses through the Anthropic Claude API.
 
+<img width="1567" alt="Screenshot 2025-02-02 at 11 59 47" src="https://github.com/user-attachments/assets/fee8f719-5783-458c-a11d-540cecd70b6f" />
+
+
 ## Features
 
 - Real-time caption monitoring in Google Meet sessions
