@@ -1,0 +1,29 @@
+#meeting-assistant-answers {
+  font-family: 'Google Sans', Arial, sans-serif;
+  pointer-events: none;
+}
+
+#meeting-assistant-answers > div {
+  pointer-events: auto;
+  margin: 10px 0;
+  padding: 12px;
+  background: #ffffff;
+  border-left: 4px solid #4285f4;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: opacity 0.3s ease;
+}
+
+#meeting-assistant-answers .loading {
+  color: #5f6368;
+  border-left-color: #dadce0;
+}
+
+#meeting-assistant-logs {
+  background: rgba(0, 0, 0, 0.85) !important;
+  backdrop-filter: blur(2px);
+}
+
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

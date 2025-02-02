@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "Meeting Assistant Pro",
+  "version": "1.2",
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://*.google.com/*",
+    "*://*.zoom.us/*",
+    "*://api.anthropic.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://meet.google.com/*", "*://*.zoom.us/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["content.css"],
+    "matches": ["*://meet.google.com/*", "*://*.zoom.us/*"]
+  }],
+  "options_page": "options.html",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
